@@ -392,19 +392,31 @@ body{
 }
 
 /* ================= MOBILE RESPONSIVE ================= */
-/* ================= MOBILE RESPONSIVE ================= */
 
 @media(max-width:768px){
 
+  html,
   body{
     overflow-x:hidden;
+  }
+
+  section{
+    scroll-margin-top:0;
   }
 
   /* NAVBAR */
 
   .navbar{
-    padding:20px;
-    position:relative;
+    width:100%;
+    padding:18px 20px;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    background:#0f172a;
+
+    z-index:1000;
   }
 
   .logo{
@@ -413,8 +425,7 @@ body{
 
   .menu-toggle{
     display:block;
-    font-size:32px;
-    cursor:pointer;
+    font-size:30px;
   }
 
   .nav-links{
@@ -424,20 +435,18 @@ body{
 
     position:absolute;
 
-    top:80px;
+    top:70px;
     left:0;
 
     width:100%;
 
     background:#111827;
 
-    padding:20px;
-
-    gap:20px;
+    padding:20px 0;
 
     text-align:center;
 
-    z-index:1000;
+    gap:20px;
   }
 
   .nav-links.active{
@@ -455,9 +464,9 @@ body{
 
     text-align:center;
 
-    padding:120px 20px 80px;
+    padding:120px 20px 60px;
 
-    gap:50px;
+    gap:40px;
 
     min-height:auto;
   }
@@ -467,8 +476,7 @@ body{
   }
 
   .hero-left h1{
-    font-size:42px;
-
+    font-size:40px;
     line-height:1.2;
   }
 
@@ -484,6 +492,8 @@ body{
     flex-direction:column;
 
     width:100%;
+
+    gap:14px;
   }
 
   .primary-btn,
@@ -493,21 +503,20 @@ body{
 
   .hero-right{
     width:100%;
-
-    display:flex;
-
-    justify-content:center;
   }
 
   .ai-card{
     width:100%;
-    max-width:340px;
+
+    max-width:100%;
+
+    margin:0 auto;
   }
 
   /* FEATURES */
 
   .features{
-    padding:80px 20px;
+    padding:60px 20px;
   }
 
   .features h2{
@@ -520,40 +529,66 @@ body{
     grid-template-columns:1fr;
   }
 
+  .feature-card{
+    min-height:auto;
+
+    width:100%;
+  }
+
   /* STATS */
 
   .stats-section{
-    padding:80px 20px;
+    padding:60px 20px;
+    text-align:center;
   }
 
   .stats-section h2{
     font-size:34px;
+    margin-bottom:20px;
+  }
+
+  .stats-section p{
+    margin-bottom:40px;
+    line-height:28px;
   }
 
   .stats{
     grid-template-columns:1fr;
 
-    padding:40px 0 0;
+    padding:0;
+
+    gap:20px;
+  }
+
+  .stat-box{
+    min-height:auto;
+    width:100%;
   }
 
   /* TESTIMONIALS */
 
   .testimonials{
-    padding:80px 20px;
+    padding:60px 20px;
   }
 
   .testimonials h2{
     font-size:34px;
+
+    margin-bottom:40px;
   }
 
   .testimonial-grid{
     grid-template-columns:1fr;
   }
 
+  .testimonial-card{
+    width:100%;
+  }
+
   /* CTA */
 
   .cta{
-    padding:80px 20px;
+    padding:60px 20px;
   }
 
   .cta h2{
