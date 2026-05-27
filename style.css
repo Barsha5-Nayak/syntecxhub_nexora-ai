@@ -12,7 +12,11 @@ body{
   font-family:Arial, sans-serif;
   background:#0f172a;
   color:white;
+  padding-top:90px;
+
+  
 }
+
 
 /* NAVBAR */
 
@@ -22,7 +26,13 @@ body{
   justify-content:space-between;
   align-items:center;
   padding:24px 80px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:9999;
+  background:#0f172a;
 }
+
 
 .logo{
   font-size:28px;
@@ -68,11 +78,14 @@ body{
 
 .hero{
   width:100%;
-  min-height:85vh;
+  min-height:calc(100vh - 90px);
+
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:80px;
+
+  padding:40px 80px 80px;
+
   gap:40px;
 }
 
@@ -349,7 +362,10 @@ body{
   padding:40px 20px;
   border-top:1px solid rgba(255,255,255,0.08);
   text-align:center;
+
+  /* scroll-margin-top:120px; */
 }
+
 
 .footer h3{
   font-size:28px;
@@ -368,14 +384,27 @@ body{
   cursor:pointer;
 }
 
-/* SCROLL FIX */
-
-#features,
-#stats,
-#about,
-#contact{
-  scroll-margin-top:80px;
+html{
+  scroll-behavior:smooth;
 }
+
+/* DESKTOP SECTION FIX */
+
+section{
+  scroll-margin-top:110px;
+}
+
+/* EXTRA SPACING FIX */
+
+.features,
+.stats-section,
+.testimonials,
+.cta,
+.footer{
+  position:relative;
+}
+
+
 
 /* ANIMATION */
 
