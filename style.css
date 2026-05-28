@@ -359,18 +359,11 @@ body{
 
 .footer{
   width:100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   padding:40px 20px;
   border-top:1px solid rgba(255,255,255,0.08);
   text-align:center;
 
-
-  scroll-margin-top:120px;
+  /* scroll-margin-top:120px; */
 }
 
 
@@ -720,8 +713,7 @@ section{
 
   .footer{
     width:100%;
-    min-height: 100vh;
-    scroll-margin-top: 120px;
+
     padding:45px 20px;
   }
 
