@@ -404,6 +404,14 @@ section{
   position:relative;
 }
 
+.features,
+.stats-section,
+.testimonials,
+.cta{
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
 
 
 /* ANIMATION */
